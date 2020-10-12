@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="200dp">
+    <include layout="@layout/dropdown_menu" app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" android:layout_width="0dp"
+             android:layout_height="75dp"
+             android:layout_marginEnd="10dp"
+             android:layout_marginTop="20dp" app:layout_constraintHorizontal_bias="1.0"
+             android:id="@+id/calculatorChooser"
+             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="10dp"/>
+    <!--<EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/calculatorValue" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculatorChooser"
+            android:layout_marginTop="10dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp" android:layout_marginEnd="10dp"
+            style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"/>-->
+    <include layout="@layout/number_input"
+             android:layout_width="0dp"
+             android:layout_height="60dp"
+             android:inputType="number"
+             android:ems="10"
+             android:id="@+id/calculatorValue" app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/calculatorChooser"
+             android:layout_marginTop="10dp" app:layout_constraintStart_toStartOf="parent"
+             android:layout_marginStart="10dp" android:layout_marginEnd="75dp"/>
+    <TextView
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/removeRowButton"
+            android:typeface="normal" android:textSize="48sp"
+            app:layout_constraintStart_toEndOf="@+id/calculatorValue" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="100dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.475"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="2dp" app:srcCompat="@color/colorPrimary"
+            android:id="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="10dp" android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/calculatorValue" app:layout_constraintVertical_bias="0.71000004"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

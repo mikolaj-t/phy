@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="100dp"
+                                                   android:layout_height="100dp"
+                                                   android:id="@+id/iconLayout">
+
+    <TextView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:id="@+id/symbol"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="72sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="50dp"
+            android:textColor="#08DCF6"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeMaxTextSize="72sp"
+            app:autoSizeStepGranularity="1sp"/>
+
+    <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/description"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="73dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="73dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeStepGranularity="1sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
